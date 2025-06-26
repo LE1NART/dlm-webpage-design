@@ -1,0 +1,27 @@
+:root{
+    --main: rgb(34, 54, 69);
+    --mainDark: #0f2531;
+    --second: #2c5f70 ;
+    --contrast: #3a4a31;
+    --backContrast: #d9d8c8;
+    --backLight: #f6f1e9;
+    --backW: #ffffff;
+}
+  
+  body {
+    margin: 0;
+    font-family: sans-serif;
+    
+    background: linear-gradient(to bottom right, #e6e6d8, #5a7881);
+    
+    }
+  
+  
+  section{
+    min-height: 35vh;
+    padding-left: 13vw;
+    padding-right: 13vw;
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+  

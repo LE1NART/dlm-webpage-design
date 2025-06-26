@@ -1,0 +1,32 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    position: sticky;
+    top: 0;
+    }
+  
+  .logo {
+    height: 6em;
+  }
+
+  .menu-toggle{
+    display:none;
+    }
+  
+  .nav a {
+    margin: 0 15px;
+    color: var(--contrast);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  #contact-button {
+    background-color: var(--main);
+    color: var(--backW);
+    padding: 10px 20px;
+    border-radius: 15px 15px 15px 0px;
+    text-decoration: none;
+    font-weight: bold;
+  } 

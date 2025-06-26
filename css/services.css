@@ -1,0 +1,43 @@
+.services {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--main);
+    background-image: linear-gradient(120deg,var(--main) 60%, var(--backContrast) 40%);
+    color: var(--backW);
+  }
+  
+  .services-left h4 {
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+  }
+  
+  .services-left ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .services-left li {
+    margin: 15px 0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .services-left img {
+    width: 3em;
+    height: 3em;
+  }
+  
+  .services-right {
+    padding: 60px 40px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+  }
+
+  .beratung {
+    color: var(--main);
+    text-decoration: none;
+    font-weight: bold;
+  }

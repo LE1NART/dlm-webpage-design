@@ -1,0 +1,24 @@
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    background: var(--backLight);
+  }
+  
+  .feature {
+    background: var(--backContrast);
+    padding: 30px;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    width: 225px;
+  }
+
+  .feature h3{
+    color: var(--main);
+  }
+  
+  .feature img {
+    width: 180px;
+    height: 180px;
+  }
