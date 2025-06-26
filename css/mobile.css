@@ -1,8 +1,14 @@
 /* Alle Smartphone-Anpassungen */
 @media only screen and (max-width: 768px) {
   html, body {
-    width: 100vw;
+    max-width: 100dvw;
+    overflow-x: hidden;
     height: 100dvh;
+  }
+
+  .hero{
+    height: calc(100svh - 5rem);
+
   }
     /* Hamburger-Button sichtbar + Styling */
     .menu-toggle {
@@ -38,8 +44,8 @@
     .mobile-nav.open{
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      justify-content: start;
+
       position: fixed;
       top: 5em;
       left: 0;
@@ -47,11 +53,38 @@
       width: 100vw;
       background-color: var(--backLight);
       z-index: 1000;
-      padding-top: 60px; /* Platz für Menübutton */
-      gap: 1em;
+      padding-top: 60px; 
+
       }
-  
-    /* Header stapeln */
+      
+      .dropdown{
+        width: 100%;
+        position: static;
+      }
+
+      .dropdown > a{
+        padding:15px 0px ;
+      }
+    
+      .nav a{
+        margin:0px;
+      }
+
+      .subMenu{
+        width: 100%;
+        opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+      position: static;
+      background-color: var(--backLight);
+      
+      }
+
+      .subLink {
+        color: var(--contrast);
+        width: 100%;
+      }
+
     .header {
       display: flex;
       flex-direction: row;
@@ -60,14 +93,16 @@
       padding: 10px 20px;
       position: fixed;
       width: calc(100vmin - 40px);
+      height: 5rem;
       top: 0;
-      background-color: var(--backLight); /* wichtig, sonst transparent beim Scroll */
+      background-color: var(--backLight); 
       z-index: 1002;
     }
     .logo{
       height:4em;
       margin-bottom:10px;
     }
+
   
     /* Hero-Text kleiner + mittig */
     .hero h1,
@@ -114,10 +149,55 @@
       width:80px;
       height:80px;
     }
+    .scroller{
+      max-width: 100dvw;
+    }
     .kunden-logos{
       width:60px;
     }
   
+    .development{
+      min-height: 75svh;
+    }
+
+    .leitbild{
+      display: flex;
+      flex-direction: row;
+      min-height:max-content;
+      padding-top: 15svh;
+      padding-bottom: 15svh;
+    }
+
+    .wrapper{
+      flex-direction: column;
+      min-height:fit-content;
+    }
+
+    .items{
+      width: 50vw;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+    }
+
+  .items p {
+    white-space: wrap;
+    overflow: visible;
+    height: fit-content;
+    text-align: justify;
+  }
+
+    .items:hover{
+      width: 50vw;
+      height: fit-content;
+      flex-direction: column;
+      gap:0px;
+    }
+
+    .items img{
+      width: 7rem;
+    }
+
     /* Footer spalten untereinander */
     .footer-columns{
       flex-direction:column;

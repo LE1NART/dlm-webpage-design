@@ -5,28 +5,93 @@
     padding: 20px 60px;
     position: sticky;
     top: 0;
+    transition: background-color 0.4s ease, color 0.4s ease;
     }
-  
-  .logo {
-    height: 6em;
-  }
 
-  .menu-toggle{
+.logo {
+    height: 6em;
+}
+
+.menu-toggle{
     display:none;
     }
-  
-  .nav a {
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav a {
     margin: 0 15px;
-    color: var(--contrast);
     text-decoration: none;
     font-weight: 600;
-  }
-  
-  #contact-button {
+    padding: 10px 20px;
+}
+
+.normalA{
+    color: var(--contrast);
+}
+
+.nav a:hover{
+    background-color: var(--main);
+    color: var(--backW);
+    padding: 10px 20px;
+    border-radius: 15px 15px 0px 0px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact-button {
     background-color: var(--main);
     color: var(--backW);
     padding: 10px 20px;
     border-radius: 15px 15px 15px 0px;
     text-decoration: none;
     font-weight: bold;
-  } 
+} 
+
+.header.scrolled {
+    background-color: var(--backLight); 
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown {
+    position: relative; /* allows subMenu to position itself relative to this */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.subMenu {
+    width: calc(100% - 30px);
+    position: absolute;
+    top: 100%; /* directly below .dropdown */
+    left: 15px;
+    background-color: var(--main);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
+}
+
+.subMenu.showed {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.subLink {
+    color: var(--backW);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    }

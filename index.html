@@ -12,20 +12,28 @@
   <link rel="stylesheet" href="css/kunden.css" />
   <link rel="stylesheet" href="css/services.css" />
   <link rel="stylesheet" href="css/mobile.css" />
-  <script defer src="scroller.js"></script>
-  <script defer src="mobileMenu.js"></script>
+  <script defer src="javascript/scroller.js"></script>
+  <script defer src="javascript/mobileMenu.js"></script>
+  <script defer src="javascript/headerScroll.js"></script>
 </head>
 <body>
 
   <header class="header">
-    <a href="#"><img class="logo" src="logos/Komplettlogo_transparent_newColor.png"></img></a>
+    <a href="/index.html"><img class="logo" src="logos/Komplettlogo_transparent_newColor.png"></img></a>
     
     <button class="menu-toggle" aria-label="Menü öffnen"></button>
     <nav class="nav mobile-nav">
-      <a href="/development.html">PROJEKTE</a>
-      <a href="/unternehmen.html">UNTERNEHMEN</a>
-      <a href="/development.html">WEITERBILDUNG</a>
-      <a href="#" id="contact-button">KONTAKT</a>
+      <a class="normalA" href="/template/development.html">PROJEKTE</a>
+      <div id="unternehmenLink" class="dropdown">
+        <a class="normalA"  href="/template/development.html">UNTERNEHMEN</a>
+        <div class="subMenu">
+            <a class="subLink" href="/template/development.html">ÜBER UNS</a>
+            <a class="subLink" href="/template/leitbild.html">LEITBILD</a>
+            <a class="subLink" href="/template/development.html">KARRIERE</a>
+        </div>
+      </div>
+      <a class="normalA" href="/template/development.html">WEITERBILDUNG</a>
+      <a  href="#" id="contact-button">KONTAKT</a>
     </nav>
   </header>
 

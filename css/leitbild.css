@@ -1,0 +1,73 @@
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.leitbild {
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    color: var(--main);
+    text-align: left;
+    height:calc(100vh - 168px);
+    padding: 0px;
+  }
+
+  .items {
+    background: var(--backContrast);
+    padding: 30px;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    width: 20rem;
+    height: 24rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    min-height: 35rem;
+   
+  }
+  
+  @media only screen and (min-width: 768px) {
+  .leitbild img{
+    width: 10rem;
+  }
+
+  .items p{
+    height: 2rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  
+
+  .items:hover{
+    width: 34rem;
+    flex-direction: row;
+    gap:0.5em;
+  }
+
+  .items:hover img{
+    width: 5rem;
+  }
+
+  .items:hover h3{
+    font-size: smaller;
+  }
+
+  .items:hover p{
+    white-space: wrap;
+    overflow: visible;
+    height: 13rem;
+    text-align: justify;
+  
+  }
+  }
