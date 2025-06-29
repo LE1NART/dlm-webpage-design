@@ -15,6 +15,7 @@
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
     width: 15rem;
     height: 15rem;
+    text-decoration: none;
   }
 
   .feature h3{

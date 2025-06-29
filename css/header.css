@@ -42,6 +42,15 @@
     font-weight: bold;
 }
 
+.hoverFake{
+    background-color: var(--main);
+    color: var(--backW);
+    padding: 10px 20px;
+    border-radius: 15px 15px 0px 0px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 #contact-button {
     background-color: var(--main);
     color: var(--backW);

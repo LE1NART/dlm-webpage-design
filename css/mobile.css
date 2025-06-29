@@ -160,43 +160,6 @@
       min-height: 75svh;
     }
 
-    .leitbild{
-      display: flex;
-      flex-direction: row;
-      min-height:max-content;
-      padding-top: 15svh;
-      padding-bottom: 15svh;
-    }
-
-    .wrapper{
-      flex-direction: column;
-      min-height:fit-content;
-    }
-
-    .items{
-      width: 50vw;
-      height: fit-content;
-      display: flex;
-      flex-direction: column;
-    }
-
-  .items p {
-    white-space: wrap;
-    overflow: visible;
-    height: fit-content;
-    text-align: justify;
-  }
-
-    .items:hover{
-      width: 50vw;
-      height: fit-content;
-      flex-direction: column;
-      gap:0px;
-    }
-
-    .items img{
-      width: 7rem;
-    }
 
     /* Footer spalten untereinander */
     .footer-columns{
