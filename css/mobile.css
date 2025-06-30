@@ -116,15 +116,6 @@
       gap:10px;
     }
   
-    /* Features übereinander */
-    .features{
-      flex-direction:column;
-      align-items:center;
-    }
-    .feature{
-      width:80%;
-      margin-bottom:20px;
-    }
   
     /* Services untereinander */
     .services{

@@ -36,6 +36,10 @@
     justify-content: center;
   }
 
+  .services-right a{
+    font-size: 18px;
+  }
+
   .beratung {
     color: var(--main);
     text-decoration: none;

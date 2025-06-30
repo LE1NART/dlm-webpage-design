@@ -7,6 +7,9 @@
     --backLight: #f6f1e9;
     --backW: #ffffff;
 }
+  *{
+    font-family: 'Source Sans 3', sans-serif;
+  }
   
   body {
     margin: 0;

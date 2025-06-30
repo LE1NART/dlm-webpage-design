@@ -40,7 +40,7 @@ body{
     border-radius: 6px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
     width: 20rem;
-    height: 22rem;
+    height: 26rem;
     display: flex;
     flex-direction: column;
   }
@@ -65,14 +65,28 @@ body{
     white-space: nowrap;
     text-overflow: ellipsis;
     font-weight: bold;
+    font-family: sans-serif;
+    text-align: justify;
+    transition: all 0.2s ease;
+    transition-delay: 0.2s;
   }
 
-  
+  .items {
+  transition: width 0.3s ease, gap 0.3s ease, flex-direction 0.3s ease;
+}
+
+.items img {
+  transition: width 0.3s ease;
+}
+
+.items h3 {
+  transition: font-size 0.3s ease;
+  margin-bottom: 0px;
+}
 
   .items:hover{
     width: 34rem;
-    flex-direction: row;
-    gap:0.5em;
+    /* flex-direction: row; */
   }
 
   .items:hover img{
@@ -88,7 +102,7 @@ body{
     overflow: visible;
     height: 13rem;
     text-align: justify;
-  
+    visibility: visible;
   }
   }
 
